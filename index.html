@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$smile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .ticker {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #f0f0f0;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #666;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .smile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+        
+        .smile {
+            width: 300px;
+            height: 300px;
+            border: 3px solid #333;
+            border-radius: 20px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .face {
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+        
+        .eye {
+            width: 20px;
+            height: 30px;
+            background: #333;
+            border-radius: 50%;
+            position: absolute;
+            top: 60px;
+        }
+        
+        .eye.left {
+            left: 50px;
+        }
+        
+        .eye.right {
+            right: 50px;
+        }
+        
+        .mouth {
+            width: 120px;
+            height: 60px;
+            border: 3px solid #333;
+            border-top: none;
+            border-radius: 0 0 120px 120px;
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .socials {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .social-link {
+            padding: 10px 20px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background: #555;
+            transform: translateY(-2px);
+        }
+        
+        .description {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="ticker">$smile</div>
+    
+    <div class="smile-container">
+        <div class="smile">
+            <div class="face">
+                <div class="eye left"></div>
+                <div class="eye right"></div>
+                <div class="mouth"></div>
+            </div>
+        </div>
+        
+        <div class="socials">
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Discord</a>
+            <a href="#" class="social-link">Telegram</a>
+        </div>
+    </div>
+    
+    <div class="description">$smile</div>
+</body>
+</html>
